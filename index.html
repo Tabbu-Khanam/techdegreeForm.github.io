@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>The code review</h1>
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+    <hr class="hr">
+    <hr>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+            <div class="row">
+             <div class="left">
+               <label for="fname">Full Name:</label>
+             </div>
+             <div class="right">
+               <input type="text" id="fname" name="user_name" placeholder="required" required>
+             </div>
+            </div>
+            <div class="row">
+             <div class="left">
+                <label for="mail">Email Address:</label>
+              </div>
+             <div class="right">
+                <input type="email" id="mail" name="user_email" placeholder="required" required>
+             </div>
+            </div>
+        <div class="row">
+               <div class="left">
+                <label for="number">Phone Number</label>
+                </div>
+               <div class="right">
+                 <input type="tel" id="number" name="user_name" placeholder="123-45-678">
+               </div>
+            </div>
+            <div class="row">
+             <div class="left">
+                 <label for="saddress">Street Address</label>
+             </div>
+             <div class="right">
+                 <input type="text" id="saddress" name="user_saddress" placeholder="Street Address">
+             </div>
+            </div>
+            <div class="row">
+              <div class="left">
+                  <label for="city">City</label>
+              </div>
+              <div class="right">
+                  <input type="text" id="city" name="user_city" placeholder="City">
+              </div>
+            </div>
+             <div class="row">
+                <div class="left">
+                   <label for="state">State</label>
+            </div>
+                <div class="right">
+                   <select id="state" name="user_state">
+                       <option value="haryana">Haryana</option>
+                       <option value="punjab">Punjab</option>
+                       <option value="orrisa">Orrisa</option>
+                       <option value="rajasthan">Rajasthan</option>
+                       <option value="goa">Goa</option>
+                       <option value="gujarat">Gujarat</option>
+                       <option value="tamil nadu">Tamil Nadu</option>
+                       <option value="sikkim">Sikkim</option>
+                   </select>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                <label for="zcode">Zip Code</label>
+                </div>
+                <div class="right">
+                  <input type="text" id="zcode" name="user_code" placeholder="Zip Code">
+                </div>
+            </div>
+        </fieldset>
+        <hr class="hr">
+        <fieldset>
+           <legend class="legend">Newsletter</legend>
+            <h4>Select the newsletter you would like to receive</h4>
+            <input type="checkbox" id="htmlnews" value="news_html" name="user_news"><label for="htmlnews">HTML News</label><br>
+            <input type="checkbox" id="cssnews"  value="news_css" name="user_news"><label for="cssnews">CSS News</label><br>
+            <input type="checkbox" id="scriptnews" value="news_javascript" name="user_news" ><label for="scriptnews">Javascript News</label>
+            <h4>NewsLetter format</h4>
+            <input type="radio" id="html" value="html-newsletter" name="user_format"><label for="html">HTML</label><br>
+             <input type="radio" id="plain" value="plain-newsletter" name="user_format"><label for="plain">Plain text</label><br>
+             <label for="topics">Other topics you'd like to hear about</label>
+             <textarea id="topics" name="user_topics" rows="7" placeholder="Write Some topics"></textarea>
+             <button type="submit">Sign Up</button>
+        </fieldset>
+        </form>
+    </div>
+    <footer class="header">
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+</html>
